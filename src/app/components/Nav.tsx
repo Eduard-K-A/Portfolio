@@ -42,7 +42,6 @@ export function Nav({ dark, setDark }: { dark: boolean; setDark: (v: boolean) =>
           <a
             href={cvUrl}
             download="Eduard_King_Anterola_CV.pdf"
-            data-cursor="pointer"
             className="hidden sm:inline-flex items-center justify-center rounded-md border border-[var(--border-color)] px-3 py-1.5 text-[var(--fg)] hover:bg-[var(--surface)] transition-colors"
             style={{ fontSize: "0.75rem", fontWeight: 500 }}
           >

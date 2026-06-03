@@ -86,9 +86,11 @@ export default function App() {
 
   useEffect(() => {
     const noCursor = !matchMedia("(hover: none)").matches;
-    if (noCursor) document.documentElement.style.cursor = "none";
+    if (noCursor) {
+      document.documentElement.classList.add("custom-cursor");
+    }
     return () => {
-      document.documentElement.style.cursor = "";
+      document.documentElement.classList.remove("custom-cursor");
     };
   }, []);
 

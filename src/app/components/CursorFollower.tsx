@@ -6,7 +6,6 @@ export function CursorFollower() {
   const target = useRef({ x: -100, y: -100 });
   const pos = useRef({ x: -100, y: -100 });
   const [visible, setVisible] = useState(false);
-  const [hovering, setHovering] = useState(false);
 
   useEffect(() => {
     if (matchMedia("(hover: none)").matches) return;
@@ -18,9 +17,6 @@ export function CursorFollower() {
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${e.clientX - 3}px, ${e.clientY - 3}px, 0)`;
       }
-      const el = e.target as HTMLElement | null;
-      const isInteractive = !!el?.closest('a, button, [data-cursor="pointer"]');
-      setHovering(isInteractive);
     };
     const onLeave = () => setVisible(false);
     const onEnter = () => setVisible(true);
@@ -60,7 +56,7 @@ export function CursorFollower() {
           opacity: visible ? 1 : 0,
           transform: "translate3d(-100px,-100px,0)",
           transition: "opacity 200ms, width 160ms, height 160ms, background-color 160ms",
-          backgroundColor: hovering ? "var(--fg)" : "transparent",
+          backgroundColor: "transparent",
         }}
       />
       <div
@@ -70,7 +66,7 @@ export function CursorFollower() {
         style={{
           width: 6,
           height: 6,
-          opacity: visible && !hovering ? 1 : 0,
+          opacity: visible ? 1 : 0,
           transform: "translate3d(-100px,-100px,0)",
           transition: "opacity 160ms",
         }}

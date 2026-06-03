@@ -46,7 +46,6 @@ export function Chip({
         type="button"
         onClick={onClick}
         title={title}
-        data-cursor="pointer"
         className={`${base} ${visual} ${hover}`}
         style={{ fontSize: "0.6875rem" }}
       >

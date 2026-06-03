@@ -38,14 +38,12 @@ export function Sidebar() {
     { icon: Mail, label: email, href: `mailto:${email}` },
     { icon: Linkedin, label: "linkedin.com/in/eduard-king-anterola", href: "https://linkedin.com/in/eduard-king-anterola" },
     { icon: Github, label: "github.com/Eduard-K-A", href: "https://github.com/Eduard-K-A" },
-    { icon: Globe, label: "eduard-king.vercel.app", href: "https://eduard-king.vercel.app" },
   ];
 
   return (
     <aside className="w-full lg:fixed lg:top-[4.5rem] lg:left-[clamp(1.5rem,calc((100vw-1100px)/2+1.5rem),999rem)] lg:z-20 lg:w-[340px] lg:h-[calc(100vh-6rem)] shrink-0">
       <div className="flex flex-col gap-5 lg:h-full lg:overflow-y-auto lg:pr-2">
         <div
-          data-cursor="pointer"
           className="relative w-full aspect-square rounded-2xl bg-[var(--surface)] border border-[var(--border-color)] overflow-hidden group cursor-pointer transition-all duration-300 hover:border-[var(--fg)]"
         >
           {/* Decorative grid */}
@@ -119,7 +117,6 @@ export function Sidebar() {
                   href={l.href}
                   target={isEmail ? undefined : "_blank"}
                   rel="noreferrer"
-                  data-cursor="pointer"
                   className="flex items-center gap-2.5 text-[var(--muted)] hover:text-[var(--fg)] hover:translate-x-0.5 transition-all min-w-0 flex-1"
                   style={{ fontSize: "0.8125rem" }}
                 >
@@ -130,7 +127,6 @@ export function Sidebar() {
                   <button
                     type="button"
                     onClick={copyEmail}
-                    data-cursor="pointer"
                     aria-label="Copy email"
                     className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors shrink-0"
                   >
@@ -145,13 +141,13 @@ export function Sidebar() {
         <div className="border-t border-[var(--border-color)]" />
 
         <div className="flex items-center gap-3">
-          <a href="https://github.com/Eduard-K-A" target="_blank" rel="noreferrer" data-cursor="pointer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
+          <a href="https://github.com/Eduard-K-A" target="_blank" rel="noreferrer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
             <Github size={18} />
           </a>
-          <a href="https://linkedin.com/in/eduard-king-anterola" target="_blank" rel="noreferrer" data-cursor="pointer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
+          <a href="https://linkedin.com/in/eduard-king-anterola" target="_blank" rel="noreferrer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
             <Linkedin size={18} />
           </a>
-          <a href="https://eduard-king.vercel.app" target="_blank" rel="noreferrer" data-cursor="pointer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
+          <a href="https://eduard-king.vercel.app" target="_blank" rel="noreferrer" className="text-[var(--muted)] hover:text-[var(--fg)] hover:-translate-y-0.5 transition-all">
             <Globe size={18} />
           </a>
         </div>

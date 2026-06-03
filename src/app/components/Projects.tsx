@@ -100,7 +100,6 @@ export function Projects({
           <button
             type="button"
             onClick={onClearFilter}
-            data-cursor="pointer"
             className="flex items-center gap-1 text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
             style={{ fontSize: "0.75rem" }}
           >
@@ -155,7 +154,6 @@ export function Projects({
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
-                    data-cursor="pointer"
                     className="text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
                   >
                     <Github size={14} />
@@ -166,7 +164,6 @@ export function Projects({
                     href={p.link}
                     target="_blank"
                     rel="noreferrer"
-                    data-cursor="pointer"
                     className="inline-flex items-center gap-1 text-[var(--muted)] hover:text-[var(--fg)] transition-colors"
                     style={{ fontSize: "0.75rem" }}
                   >
@@ -189,7 +186,6 @@ export function Projects({
                 href={p.link}
                 target="_blank"
                 rel="noreferrer"
-                data-cursor="pointer"
                 className={`${cardClass} block`}
               >
                 {cardContent}

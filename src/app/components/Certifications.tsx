@@ -21,7 +21,6 @@ export function Certifications() {
         {certs.map((c, i) => (
           <div
             key={c.name}
-            data-cursor="pointer"
             className={`flex items-center justify-between gap-3 px-4 py-2.5 cursor-default transition-colors hover:bg-[var(--surface)] ${i !== 0 ? "border-t border-[var(--border-color)]" : ""}`}
           >
             <div className="flex items-center gap-3 min-w-0 flex-1">
