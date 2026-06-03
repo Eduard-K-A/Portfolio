@@ -91,7 +91,7 @@ export function Sidebar() {
             Eduard King Anterola
           </h1>
           <p style={{ fontSize: "0.875rem" }} className="text-[var(--muted)] leading-relaxed">
-            Full-Stack Developer · CS Student · Aspiring ML Engineer
+            Full-Stack Developer · CS Student · Aspiring AI Engineer
           </p>
         </div>
 
