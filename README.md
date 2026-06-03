@@ -1,29 +1,44 @@
 # Portfolio V3
 
-Personal portfolio site for Eduard King Anterola, built as a single-page React app with Vite.
+Personal portfolio for Eduard King Anterola, built as a single-page Vite + React application.
 
-## Overview
+This site is structured as a focused developer portfolio: a fixed navigation bar, a persistent sidebar identity card, and a scrollable main content column that presents background, technical skills, projects, experience, education, and certifications. The design emphasizes clear typography, muted surfaces, and a dark/light theme toggle rather than a heavy marketing layout.
 
-This project presents:
+## What It Includes
 
-- An about section with a short bio and role highlights
-- A technology stack browser with clickable tags
-- A project showcase with tag-based filtering
-- An experience timeline
-- An education section
-- A certifications list
-- A contact call-to-action and social links
-- Light/dark theme toggling
+- Fixed top navigation with section links, theme toggle, and CV download
+- Persistent sidebar with profile image, contact links, location, and local time
+- About section with a short professional summary
+- Stack browser with grouped technologies and filterable chips
+- Project showcase with tag-based filtering
+- Experience and leadership timeline
+- Education details
+- Certifications list
+- Contact call-to-action and social links
 
 ## Tech Stack
 
 - React 18
 - TypeScript
-- Vite
+- Vite 6
 - Tailwind CSS 4
 - Radix UI primitives
 - Lucide React icons
-- Motion / animation utilities
+- `motion`
+- `sonner`
+- `recharts`
+- `react-hook-form`
+- `react-router`
+- `next-themes`
+
+## Project Structure
+
+- `src/main.tsx` - application entry point
+- `src/app/App.tsx` - page composition and theme state
+- `src/app/components/` - UI sections, cursor, navigation, sidebar, and project cards
+- `src/assets/` - sidebar artwork and other static assets
+- `src/imports/` - imported documents such as the CV PDF
+- `src/styles/` - global styles, theme tokens, and Tailwind setup
 
 ## Getting Started
 
@@ -38,7 +53,7 @@ This project presents:
 npm install
 ```
 
-### Start the dev server
+### Run locally
 
 ```bash
 npm run dev
@@ -50,22 +65,19 @@ npm run dev
 npm run build
 ```
 
-## Scripts
+## Deployment
 
-- `npm run dev` - start the local Vite dev server
-- `npm run build` - create a production build
+This is a Vite app, not a Next.js app. If deploying to Vercel, use:
 
-## Project Structure
-
-- `src/main.tsx` - app entry point
-- `src/app/App.tsx` - portfolio page composition
-- `src/app/components/` - reusable UI sections and widgets
-- `src/styles/` - global styles and theme files
-- `src/imports/` - imported assets and documents
+- Framework preset: `Vite` or `Other`
+- Root directory: the folder containing `package.json`
+- Build command: `npm run build`
+- Output directory: `dist`
 
 ## Notes
 
-- The app uses CSS variables for theme values and applies them at runtime.
-- Project cards can be filtered by stack tag.
-- The portfolio links out to GitHub, LinkedIn, and live project demos where available.
+- The portfolio uses runtime CSS variables for theme values.
+- The project list supports filtering by technology tag.
+- The sidebar image switches between light and dark assets depending on theme.
+- The custom mouse cursor is global on desktop and hidden on touch devices.
 
