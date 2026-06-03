@@ -55,7 +55,7 @@ const projects: Project[] = [
     type: "Personal",
     desc: "Full-stack cleaning service marketplace with PostGIS real-time geolocation, mock escrow, Supabase Realtime, and multi-role auth — no Express backend.",
     tags: ["Next.js 14", "TypeScript", "Supabase", "PostGIS", "Tailwind CSS", "Server Actions"],
-    link: "https://clean-ops-git-main-eduard-king-anterolas-projects.vercel.app/homepage",
+    link: "https://clean-ops-alpha.vercel.app/homepage",
   },
   {
     title: "Flur Chat",
