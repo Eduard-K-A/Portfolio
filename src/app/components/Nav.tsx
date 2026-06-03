@@ -1,6 +1,7 @@
 import { Sun, Moon } from "lucide-react";
 
 export function Nav({ dark, setDark }: { dark: boolean; setDark: (v: boolean) => void }) {
+  const cvUrl = new URL("../../imports/Eduard_King_Anterola_CV.pdf", import.meta.url).href;
   const links = [
     { label: "About", href: "#about" },
     { label: "Stack", href: "#stack" },
@@ -8,8 +9,15 @@ export function Nav({ dark, setDark }: { dark: boolean; setDark: (v: boolean) =>
     { label: "Certifications", href: "#certifications" },
   ];
   return (
-    <header className="sticky top-0 z-40 backdrop-blur bg-[var(--bg)]/80 border-b border-[var(--border-color)]">
-      <div className="max-w-[1100px] mx-auto px-6 lg:px-10 h-14 flex items-center justify-between">
+    <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-[var(--bg)]/88 border-b border-[var(--border-color)]">
+      <div
+        className="max-w-[1100px] mx-auto px-6 lg:px-10 h-12 flex items-center justify-between"
+        style={{
+          boxShadow: dark
+            ? "0 10px 30px rgba(0, 0, 0, 0.24)"
+            : "0 10px 30px rgba(9, 9, 11, 0.08)",
+        }}
+      >
         <div className="flex items-center gap-3">
           <span className="font-mono" style={{ fontSize: "0.9375rem", fontWeight: 600 }}>
             EKA
@@ -31,6 +39,15 @@ export function Nav({ dark, setDark }: { dark: boolean; setDark: (v: boolean) =>
               </a>
             ))}
           </div>
+          <a
+            href={cvUrl}
+            download="Eduard_King_Anterola_CV.pdf"
+            data-cursor="pointer"
+            className="hidden sm:inline-flex items-center justify-center rounded-md border border-[var(--border-color)] px-3 py-1.5 text-[var(--fg)] hover:bg-[var(--surface)] transition-colors"
+            style={{ fontSize: "0.75rem", fontWeight: 500 }}
+          >
+            Download CV
+          </a>
           <button
             onClick={() => setDark(!dark)}
             aria-label="Toggle theme"

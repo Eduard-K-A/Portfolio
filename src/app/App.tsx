@@ -4,8 +4,7 @@ import { Sidebar } from "./components/Sidebar";
 import { SectionLabel, Chip } from "./components/SectionLabel";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
-import { CursorFollower } from "./components/CursorFollower";
-import { BackgroundTexture } from "./components/BackgroundTexture";
+import { MouseFollower } from "./components/MouseFollower";
 
 const themeVars = {
   light: {
@@ -101,14 +100,13 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden" style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}>
-      <BackgroundTexture dark={dark} />
-      <CursorFollower />
+    <div className="relative min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}>
       <div className="relative z-10">
+        <MouseFollower />
         <Nav dark={dark} setDark={setDark} />
 
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-10 py-10 lg:py-16">
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-10 pt-18 pb-10 lg:pt-20 lg:pb-16">
+          <div className="flex flex-col gap-10 lg:block lg:pl-[380px]">
             <Sidebar />
 
             <main className="flex-1 min-w-0 max-w-[680px]">

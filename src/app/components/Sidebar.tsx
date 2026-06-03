@@ -1,5 +1,7 @@
 import { Mail, Linkedin, Github, Globe, MapPin, Clock, Copy, Check } from "lucide-react";
 import { useEffect, useState } from "react";
+import lightModeImage from "../../assets/light-mode.png";
+import darkModeImage from "../../assets/dark-mode.png";
 
 export function Sidebar() {
   const [time, setTime] = useState("");
@@ -40,8 +42,8 @@ export function Sidebar() {
   ];
 
   return (
-    <aside className="lg:sticky lg:top-24 lg:self-start w-full lg:w-[340px] shrink-0">
-      <div className="flex flex-col gap-5">
+    <aside className="w-full lg:fixed lg:top-[4.5rem] lg:left-[clamp(1.5rem,calc((100vw-1100px)/2+1.5rem),999rem)] lg:z-20 lg:w-[340px] lg:h-[calc(100vh-6rem)] shrink-0">
+      <div className="flex flex-col gap-5 lg:h-full lg:overflow-y-auto lg:pr-2">
         <div
           data-cursor="pointer"
           className="relative w-full aspect-square rounded-2xl bg-[var(--surface)] border border-[var(--border-color)] overflow-hidden group cursor-pointer transition-all duration-300 hover:border-[var(--fg)]"
@@ -55,14 +57,20 @@ export function Sidebar() {
               backgroundSize: "28px 28px",
             }}
           />
-          {/* Initials */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span
-              className="font-mono text-[var(--fg)] transition-transform duration-500 group-hover:scale-110"
-              style={{ fontSize: "5rem", fontWeight: 700, letterSpacing: "-0.04em" }}
-            >
-              EKA
-            </span>
+          {/* Theme image */}
+          <div className="absolute inset-0 overflow-hidden rounded-2xl">
+            <img
+              src={lightModeImage}
+              alt="Eduard King Anterola"
+              className="absolute inset-0 h-full w-full object-cover object-[center_32%] opacity-100 transition-opacity duration-500 ease-in-out dark:opacity-0"
+              draggable={false}
+            />
+            <img
+              src={darkModeImage}
+              alt="Eduard King Anterola"
+              className="absolute inset-0 h-full w-full object-cover object-[center_32%] opacity-0 transition-opacity duration-500 ease-in-out dark:opacity-100"
+              draggable={false}
+            />
           </div>
           {/* Status pill */}
           <div className="absolute top-3 left-3 flex items-center gap-2 px-2.5 py-1 rounded-full bg-[var(--bg)]/80 backdrop-blur border border-[var(--border-color)]">
