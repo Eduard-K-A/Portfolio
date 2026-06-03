@@ -33,13 +33,21 @@ const projects: Project[] = [
     desc: "Minimalist desktop task manager with groups, subtasks, and deadlines. Local-first persistence.",
     tags: ["TypeScript", "Electron", "React 19", "SQLite"],
   },
-  {
-    title: "Website Portfolio",
+{
+    title: "Faith Hack Formation Act",
     year: "2026",
-    type: "Personal",
-    desc: "Professional portfolio for my journey into software engineering and ML engineering.",
-    tags: ["TypeScript", "Next.js 14", "Tailwind CSS", "Vercel"],
-    link: "https://eduard-king.vercel.app",
+    type: "Animodev Team Project",
+    desc: "Team project built under time pressure within DLSL AnimoDev. Rapid prototyping, team coordination, iterative development.",
+    tags: ["TypeScript", "Next.js", "Supabase", "Team Project"],
+    link: "https://faith-hack-formation-act.vercel.app/",
+  },
+  {
+    title: "Faith Hack",
+    year: "2026",
+    type: "Animodev Team Project",
+    desc: "A CLI-aesthetic web application for submitting Bug Reports and Debug Logs.",
+    tags: ["TypeScript", "Next.js", "Supabase", "Team Project"],
+    link: "https://faith-hack-frontend.vercel.app/",
   },
   {
     title: "CleanOps",
@@ -64,13 +72,6 @@ const projects: Project[] = [
     desc: "Full-stack capstone: database design, REST API, and a polished React UI.",
     tags: ["React", "Node.js", "Express.js", "MongoDB"],
     link: "https://webdev-finals-frontend.vercel.app",
-  },
-  {
-    title: "Faith Hack Formation Act",
-    year: "2024",
-    type: "Hackathon",
-    desc: "Collaborative hackathon project built under time pressure within DLSL AnimoDev. Rapid prototyping, team coordination, iterative development.",
-    tags: ["React", "Team Project"],
   },
 ];
 
