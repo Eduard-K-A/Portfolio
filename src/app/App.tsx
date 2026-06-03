@@ -103,8 +103,8 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: "var(--bg)", color: "var(--fg)" }}>
+      <MouseFollower />
       <div className="relative z-10">
-        <MouseFollower />
         <Nav dark={dark} setDark={setDark} />
 
         <div className="max-w-[1100px] mx-auto px-6 lg:px-10 pt-18 pb-10 lg:pt-20 lg:pb-16">

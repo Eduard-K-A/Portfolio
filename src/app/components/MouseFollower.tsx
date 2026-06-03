@@ -57,11 +57,12 @@ export function MouseFollower() {
     <div
       ref={iconRef}
       aria-hidden
-      className="pointer-events-none fixed top-0 left-0 z-[100] text-[var(--fg)] mix-blend-difference"
+      className="pointer-events-none fixed top-0 left-0 z-[9999] text-[var(--fg)]"
       style={{
         opacity: visible ? 1 : 0,
         transform: "translate3d(-100px,-100px,0)",
         transition: "opacity 180ms ease",
+        filter: "drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25))",
       }}
     >
       <MousePointer2 size={20} strokeWidth={1.9} />
