@@ -1,6 +1,6 @@
 # Portfolio V3
 
-Personal portfolio for Eduard King Anterola, built as a single-page Vite + React application.
+My Personal Porftolio built as a single-page Vite + React application.
 
 This site is structured as a focused developer portfolio: a fixed navigation bar, a persistent sidebar identity card, and a scrollable main content column that presents background, technical skills, projects, experience, education, and certifications. The design emphasizes clear typography, muted surfaces, and a dark/light theme toggle rather than a heavy marketing layout.
 
