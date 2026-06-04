@@ -51,7 +51,7 @@ export function Certifications() {
         ))}
       </div>
       <div className="mt-4 p-4 rounded-lg bg-[var(--surface)] border border-[var(--border-color)] text-[var(--muted)]" style={{ fontSize: "0.8125rem" }}>
-        <span className="text-[var(--fg)]" style={{ fontWeight: 600 }}>48 total hours</span> · Python, pandas, R, statistics, OpenAI API, Hugging Face, LLMOps
+        <span className="text-[var(--fg)]" style={{ fontWeight: 600 }}>51 total hours</span> · Python, pandas, R, statistics, OpenAI API, Hugging Face, LLMOps
       </div>
     </div>
   );
