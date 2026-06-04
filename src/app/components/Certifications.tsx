@@ -12,6 +12,7 @@ const certs = [
   { name: "Prompt Engineering with the OpenAI API", date: "Apr 25, 2026", hours: "4 hrs" },
   { name: "Working with Hugging Face", date: "May 12, 2026", hours: "2 hrs" },
   { name: "LLMOps Concepts", date: "May 18, 2026", hours: "1 hr" },
+  { name: "Developing AI Systems with the OpenAI API", date: "June 04, 2026", hours: "3 hrs" },
 ];
 
 export function Certifications() {

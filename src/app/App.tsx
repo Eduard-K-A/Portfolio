@@ -120,12 +120,12 @@ export default function App() {
                   full-stack web, mobile, and desktop applications. Back-End Developer Head at the AWS Learning Club.
                   Formerly DevOps Head of AnimoDev. Top 10 Finalist at an Agora-sponsored hackathon with an AI-powered
                   real-time voice sales assistant. Currently deepening expertise in Python, R, machine learning, and
-                  LLMOps — 48 hours of structured DataCamp learning and counting.
+                  LLMOps — 51+ hours of structured DataCamp learning and counting.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Chip>🏆 Aspiring AI/ML Engineer</Chip>
                   <Chip>☁ AWS Learning Club Head</Chip>
-                  <Chip>📚 48hrs ML Coursework</Chip>
+                  <Chip>📚 51+ hrs ML Coursework</Chip>
                 </div>
               </section>
 
