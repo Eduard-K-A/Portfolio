@@ -4,6 +4,7 @@ import { Sidebar } from "./components/Sidebar";
 import { SectionLabel, Chip } from "./components/SectionLabel";
 import { Projects } from "./components/Projects";
 import { Certifications } from "./components/Certifications";
+import { CharacterReferences } from "./components/CharacterReferences";
 import { MouseFollower } from "./components/MouseFollower";
 
 const themeVars = {
@@ -232,6 +233,12 @@ export default function App() {
               <section className="mb-14">
                 <SectionLabel id="certifications">Certifications</SectionLabel>
                 <Certifications />
+              </section>
+
+              {/* CHARACTER REFERENCES */}
+              <section className="mb-14">
+                <SectionLabel id="references">Character References</SectionLabel>
+                <CharacterReferences />
               </section>
 
               {/* CTA */}
